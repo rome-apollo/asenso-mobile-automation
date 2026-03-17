@@ -31,6 +31,31 @@ class LoginAssertion extends LoginScreen{
         await assertMessage('Chai Assertion: The system should not allow the user to login. An error message such as "Invalid OTP" should be displayed.', expected, actual)
     };
 
+    // Assertion for TS: UA_004
+    async verifyUserRedirectedToLogin() {
+        await this.buttonLogin.waitForDisplayed();
+
+        let actual = {
+            loginScreen: { 
+                openAccount: {
+                    button: await this.buttonOpenAccount.getAttribute('content-desc'), 
+                    isDisplayed: await this.buttonOpenAccount.isDisplayed()
+                }, 
+                login: {
+                    button: await this.buttonLogin.getAttribute('content-desc'), 
+                    isDisplayed: await this.buttonLogin.isDisplayed()
+                }, 
+            },
+        }
+        let expected = {
+            loginScreen: { 
+                openAccount: { button: 'OPEN AN ACCOUNT', isDisplayed: true },
+                login: { button: 'LOGIN', isDisplayed: true }
+            },
+        }
+        await assertObject('Chai Assertion: the user should be redirected to the login screen.', expected, actual)
+    };
+
 }
 
 export default LoginAssertion;
