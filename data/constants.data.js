@@ -29,6 +29,7 @@ export const testCase = {
     description: {
         userAuthentication: {
             UA_001: `The system should not allow the user to login. An error message such as **"[Notice] Your number has not been registered yet."** should be displayed.\n\n### Preconditions\n1. The login page is accessible.\n2. The user attempting to log in is not registered in the system.`,
+            UA_002: `The system should not allow the user to login. An error message such as "Invalid OTP" should be displayed.\n\n### Preconditions\n1. The login page is accessible.\n2. The user account is already registered in the system.\n3. The entered one time password (OTP) is incorrect.`,
         },
     }
 }
