@@ -3,7 +3,7 @@ import * as os from 'os'
 export const config = {
     runner: 'local',
     port: 4723,
-    // outputDir: './logs', // store all log files
+    // outputDir: './cli-logs', // store all log files
     specs: [
         './test/specs/**/*.js',
         // './test/specs/*.js',

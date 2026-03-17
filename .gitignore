@@ -3,3 +3,4 @@
 *.env
 /allure-report
 /allure-results
+/cli-logs
