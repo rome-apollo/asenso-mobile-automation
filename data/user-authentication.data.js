@@ -38,6 +38,15 @@ export const metadata = {
         opProject: project.product[0],
         opTicketID: '00000',
     },
+    UA_006: {
+        testID: 'UA_006',
+        description: testCase.description.userAuthentication.UA_006,
+        owner: project.owner,
+        tags: [project.name, features.userAuthentication, `Sprint ${project.currentSprint}`],
+        severity: severity.blocker,
+        opProject: project.product[0],
+        opTicketID: '00000',
+    },
 }
 
 export const behaviorsData = {

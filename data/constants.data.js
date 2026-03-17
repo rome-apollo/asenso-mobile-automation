@@ -33,6 +33,7 @@ export const testCase = {
             UA_003: `The system should not allow the user to login when incorrect password is entered.\n\n### Preconditions\n1. The login page is accessible.\n2. The user account is already registered in the system.\n3. The entered one time password (OTP) is incorrect.`,
             UA_004: `The 'Change' button or switch account should function correctly and redirected to login screen.\n\n### Preconditions\n1. The login page is accessible.\n2. The user account is already registered in the system.\n3. The entered one time password (OTP) is incorrect.`,
             UA_005: `the 'Open an Account' button when entered number is not registered yet should function correctly and redirected to login screen.\n\n### Preconditions\n1. The login page is accessible.\n2. The user account is already registered in the system.\n3. The entered one time password (OTP) is incorrect.`,
+            UA_006: `The system should successfully authenticate the user and be redirected to the dashboard/home page.\n\n### Preconditions\n1. The user account is already registered in the system.\n2. The user has valid login credentials (e.g., username/email and password).\n3. The system login page is accessible.`,
         },
     }
 }

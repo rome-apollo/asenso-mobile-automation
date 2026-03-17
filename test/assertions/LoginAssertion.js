@@ -91,6 +91,24 @@ class LoginAssertion extends LoginScreen{
         await assertObject('Chai Assertion: the user should be redirected to the open account screen.', expected, actual)
     };
 
+    // Assertion for TS: UA_006
+    async verifyUserIfLoggedIn(firstName) {
+        await this.textWelcome.waitForDisplayed();
+        let actual = {
+            welcomeText: { 
+                buttonLabel: await this.textWelcome.getAttribute('content-desc'), 
+                isDisplayed: await this.textWelcome.isDisplayed()
+            },
+        }
+        let expected = {
+            welcomeText: { 
+                buttonLabel: `Welcome Back, ${firstName}!`, 
+                isDisplayed: true 
+            },
+        }
+        await assertObject('Chai Assertion: the user should be redirected to the dashboard screen.', expected, actual)
+    };
+
 }
 
 export default LoginAssertion;
