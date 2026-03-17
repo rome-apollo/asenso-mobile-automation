@@ -56,6 +56,59 @@ class LoginAssertion extends LoginScreen{
         await assertObject('Chai Assertion: the user should be redirected to the login screen.', expected, actual)
     };
 
+    // Assertion for TS: UA_005
+    async verifyOpenAccountPage() {
+
+        try {
+             await this.buttonContinue.waitForDisplayed({timeout: 3000});
+        } catch (error) {
+            let element = await this.buttonContinue.isDisplayed();
+            let actual = { page: 'Open Account', isDisplayed: element, message: element != true ? 'The open account page still not display.' : 'The open account page displayed.' }
+            let expected = { page: 'Open Account', isDisplayed: true, message:  'The open account page displayed.'}
+            expect(actual).to.deep.equal(expected);
+        }
+
+        let actual = {
+            openAccountScreen: { 
+                continue: {
+                    button: await this.buttonContinue.getAttribute('content-desc'), 
+                    isDisplayed: await this.buttonContinue.isDisplayed()
+                }, 
+                back: {
+                    button: await this.buttonGoBack.getAttribute('content-desc'), 
+                    isDisplayed: await this.buttonGoBack.isDisplayed()
+                }, 
+            },
+        }
+
+        let expected = {
+            openAccountScreen: { 
+                continue: { button: 'CONTINUE', isDisplayed: true },
+                back: { button: 'GO BACK', isDisplayed: true }
+            },
+        }
+        
+        await assertObject('Chai Assertion: the user should be redirected to the open account screen.', expected, actual)
+    };
+
+    // Assertion for TS: UA_006
+    async verifyUserIfLoggedIn(firstName) {
+        await this.textWelcome.waitForDisplayed();
+        let actual = {
+            welcomeText: { 
+                buttonLabel: await this.textWelcome.getAttribute('content-desc'), 
+                isDisplayed: await this.textWelcome.isDisplayed()
+            },
+        }
+        let expected = {
+            welcomeText: { 
+                buttonLabel: `Welcome Back, ${firstName}!`, 
+                isDisplayed: true 
+            },
+        }
+        await assertObject('Chai Assertion: the user should be redirected to the dashboard screen.', expected, actual)
+    };
+
 }
 
 export default LoginAssertion;
