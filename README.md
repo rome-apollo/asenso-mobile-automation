@@ -14,6 +14,9 @@ Here’s a short, clear description for each tool/framework used in Asenso Mobil
 7. **GitHub Actions** – CI/CD automation used to deploy Allure reports directly to GitHub Pages for easy access and sharing.
 <br>
 
+## Nextcloud Test Script
+- https://drive.apolloglobal.net/s/baJ4HwJ3FQB7WfE
+
 ## Appium Prerequisites
 
 Before running the Asenso Mobile mobile test automation, ensure the following prerequisites are installed and configured:
@@ -70,6 +73,7 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
    ANDROID_HOME         C:\Users\<USER>\AppData\Local\Android\Sdk 
    ANDROID_SDK_ROOT     C:\Users\<USER>\AppData\Local\Android\Sdk 
    JAVA_HOME            C:\Program Files\Java\jdk-25
+   NODE_HOME            C:\Program Files\nodejs
   ```
 
   ```bash
