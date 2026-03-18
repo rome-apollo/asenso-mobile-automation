@@ -66,24 +66,6 @@ class LoginScreen {
         })
     }
 
-    async verifyUserNotRegistered() {
-        await this.textNumberNotRegistered.waitForDisplayed();
-        let actual = {
-            noticeMessage: { 
-                textDisplayed: await this.textNotice.getAttribute('content-desc') + ' ' + await this.textNumberNotRegistered.getAttribute('content-desc'),
-                isDisplayed: await this.textNotice.isDisplayed() || await this.textNumberNotRegistered.isDisplayed()
-            },
-        }
-        let expected = {
-            noticeMessage: { 
-                textDisplayed: 'Notice Your number has not been registered yet.', 
-                isDisplayed: true 
-            },
-        }
-        await assertObject('Chai Assertion: The system should not allow the user to login. An error message such as "[Notice] Your number has not been registered yet." should be displayed.', expected, actual)
-    };
-
-
     // async clickButton(button) {
     //     if(button === 'Open Account') { 
     //         await this.buttonOpenAccount.waitForDisplayed().then( async () => {
