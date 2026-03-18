@@ -41,7 +41,7 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
 - GUI tool for inspecting mobile elements and generating selectors.
 - Download from: https://github.com/appium/appium-inspector/releases
 
-### 4. Java Development Kit (JDK)
+### 4. Java Development Kit (JDK) and Java Runtime Environment (JRE)
 - Required for Android automation.
 - Confirm installation:
 
@@ -56,13 +56,34 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
 ### 6. Git Bash
 - Command-line tool for Git version control, script execution, and running automation commands.
 
-## Cloning and running this prokect:
+### 7. Install Platform Tools - Android Debug Bridge (ADB)
+- Confirm installation:
+
+  ```bash
+  adb -version
+  ```
+
+### 8. Set Environment Variable
+- System Variables
+
+  ```bash
+   ANDROID_HOME         C:\Users\<USER>\AppData\Local\Android\Sdk 
+   ANDROID_SDK_ROOT     C:\Users\<USER>\AppData\Local\Android\Sdk 
+   JAVA_HOME            C:\Program Files\Java\jdk-25
+  ```
+
+  ```bash
+   Path for ADB
+   C:\Users\platform-tools or <PLATFORM_TOOLS_DIRECTORY>
+  ```
+
+## Cloning and running this project:
 
 1. Clone the repository:
    
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone <REPOSITORY_URL>
+   cd <REPOSITORY_FOLDER>
    ```
 
 2. Install packages:
