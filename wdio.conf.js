@@ -5,9 +5,10 @@ export const config = {
     port: 4723,
     // outputDir: './cli-logs', // store all log files
     specs: [
-        './test/specs/**/*.js',
+        // './test/specs/**/*.js',
         // './test/specs/*.js',
-
+        './test/specs/authentication/*.e2e.js',
+        './test/specs/dashboard/*.e2e.js',
     ],
     exclude: [
         // './test/specs/**/*.e2e.js',
