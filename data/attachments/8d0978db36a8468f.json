@@ -1,0 +1,1 @@
+{"expected":{"loginScreen":{"openAccount":{"button":"OPEN AN ACCOUNT","isDisplayed":true},"login":{"button":"LOGIN","isDisplayed":true}}},"actual":{"loginScreen":{"openAccount":{"button":"OPEN AN ACCOUNT","isDisplayed":true},"login":{"button":"LOGIN","isDisplayed":true}}}}

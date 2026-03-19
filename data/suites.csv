@@ -1,0 +1,72 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"The system should successfully authenticate the user and be redirected to the dashboard/home page.
+
+### Preconditions
+1. The user account is already registered in the system.
+2. The user has valid login credentials (e.g., username/email and password).
+3. The system login page is accessible.","20538","UA_006: should successfully authenticate the user and be redirected to the dashboard or home page.","Sprint X: Asenso Mobile Version 3 - User Authentication ","2026-03-18","passed","2026-03-18","","","",""
+"All elements in the menu should be visible on the screen.
+
+### Preconditions
+1. The user has a valid registered account.
+2. The user is successfully logged in to the application.
+3. The Dashboard screen is loaded.","9567","DS_003: all elements in the menu should be visible on the screen.","Sprint X: Asenso Mobile Version 3 - Dashboard Screen ","2026-03-18","passed","2026-03-18","","","",""
+"the 'Open an Account' button when entered number is not registered yet should function correctly and redirected to login screen.
+
+### Preconditions
+1. The login page is accessible.
+2. The user account is already registered in the system.
+3. The entered one time password (OTP) is incorrect.","12036","UA_005: the 'Open an Account' button when entered number is not registered yet should function correctly and redirected to login screen.","Sprint X: Asenso Mobile Version 3 - User Authentication ","2026-03-18","failed","2026-03-18","","","",""
+"The system should not allow the user to login. An error message such as ""Invalid OTP"" should be displayed.
+
+### Preconditions
+1. The login page is accessible.
+2. The user account is already registered in the system.
+3. The entered one time password (OTP) is incorrect.","16602","UA_002: should not allow the user to login when otp is entered.","Sprint X: Asenso Mobile Version 3 - User Authentication ","2026-03-18","passed","2026-03-18","","","",""
+"The welcome text with user first name should be displayed below the Asenso app header.
+
+### Preconditions
+1. The user has a valid registered account.
+2. The user is successfully logged in to the application.
+3. The Dashboard screen is loaded.","7921","DS_002: the welcome text with user first name should be displayed below the Asenso app header.","Sprint X: Asenso Mobile Version 3 - Dashboard Screen ","2026-03-18","passed","2026-03-18","","","",""
+"The system should not allow the user to login. An error message such as **""[Notice] Your number has not been registered yet.""** should be displayed.
+
+### Preconditions
+1. The login page is accessible.
+2. The user attempting to log in is not registered in the system.","8147","UA_001: should not allow the user to login when incorrect number is entered.","Sprint X: Asenso Mobile Version 3 - User Authentication ","2026-03-18","passed","2026-03-18","","","",""
+"The Individual Savings and Loan Balance amount is in hidden state by default.
+
+### Preconditions
+1. The user has a valid registered account.
+2. The user is successfully logged in to the application.
+3. The Dashboard screen is loaded.","11510","DS_005: the Individual Savings and Loan Balance amount is in hidden state by default.","Sprint X: Asenso Mobile Version 3 - Dashboard Screen ","2026-03-18","passed","2026-03-18","","","",""
+"The Show/Hide option for the Savings and Loan balance amount should function correctly.
+
+### Preconditions
+1. The user has a valid registered account.
+2. The user is successfully logged in to the application.
+3. The Dashboard screen is loaded.","12230","DS_006: the Show/Hide icon for the Savings and Loan balance amount should function correctly.","Sprint X: Asenso Mobile Version 3 - Dashboard Screen ","2026-03-18","passed","2026-03-18","","","",""
+"The Individual Savings and Loan Balance tabs should be visible and function correctly.
+
+### Preconditions
+1. The user has a valid registered account.
+2. The user is successfully logged in to the application.
+3. The Dashboard screen is loaded.","11740","DS_004: the Individual Savings and Loan Balance tabs should be visible and function correctly.","Sprint X: Asenso Mobile Version 3 - Dashboard Screen ","2026-03-18","passed","2026-03-18","","","",""
+"the bottom navigation options 'Payments', 'Dashboard', and 'Logout' should be visible.
+
+### Preconditions
+1. The user has a valid registered account.
+2. The user is successfully logged in to the application.
+3. The Dashboard screen is loaded.","10034","DS_007: the navigation options 'Payments', 'Dashboard', and 'Logout' should be visible.","Sprint X: Asenso Mobile Version 3 - Dashboard Screen ","2026-03-18","passed","2026-03-18","","","",""
+"The Asenso header should be visible at the top of the screen.
+
+### Preconditions
+1. The user has a valid registered account.
+2. The user is successfully logged in to the application.
+3. The Dashboard screen is loaded.","24157","DS_001: the Asenso header should be visible at the top of the screen.","Sprint X: Asenso Mobile Version 3 - Dashboard Screen ","2026-03-18","passed","2026-03-18","","","",""
+"The 'Change' button or switch account should function correctly and redirected to login screen.
+
+### Preconditions
+1. The login page is accessible.
+2. The user account is already registered in the system.
+3. The entered one time password (OTP) is incorrect.","18592","UA_004: the 'Change' button or switch account should function correctly and redirected to login screen.","Sprint X: Asenso Mobile Version 3 - User Authentication ","2026-03-18","passed","2026-03-18","","","",""
