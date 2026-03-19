@@ -45,7 +45,7 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
 
 ### 3. Appium Inspector
 - GUI tool for inspecting mobile elements and generating selectors.
-- Download from: https://github.com/appium/appium-inspector/releases
+- Download from: [https://github.com/appium/appium-inspector/releases](https://github.com/appium/appium-inspector/releases)
 
 ### 4. Java Development Kit (JDK) and Java Runtime Environment (JRE)
 - Required for Android automation.
