@@ -1,0 +1,5 @@
+TypeError: loginScreen.verifyUserNotRegistered is not a function
+    at Context.<anonymous> (file:///F:/Appium/asenso-mobile-automation/test/specs/authentication/UA_001.e2e.js?invalidateCache=0.6909854518439518:40:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Context.executeAsync (F:\Appium\asenso-mobile-automation\node_modules\@wdio\utils\build\index.js:1108:20)
+    at async Context.testFrameworkFnWrapper (F:\Appium\asenso-mobile-automation\node_modules\@wdio\utils\build\index.js:1188:14)

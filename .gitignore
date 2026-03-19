@@ -2,5 +2,5 @@
 /allure-results
 *.env
 /allure-report
-/allure-results
+# /allure-results
 /cli-logs
