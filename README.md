@@ -33,7 +33,7 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
   node -v
   npm -v
    ```
-### 2. Appium Server
+### 2. Appium Server and UIAutomation driver.
 - Core server that interacts with mobile devices.
 - Install globally using npm:
   
@@ -41,6 +41,21 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
   npm install -g appium
   appium -v
   3.1.0
+  ```
+
+- UIAutomator driver reference:  https://appium.io/docs/en/2.0/quickstart/uiauto2-driver/
+- Run this commadn to install
+
+  ```bash
+  appium driver install uiautomator2
+  ```
+- Verify installation:
+
+    ```bash
+  appium driver list --installed
+
+  √ Listing installed drivers
+  - uiautomator2@4.2.3 [installed (npm)]
   ```
 
 ### 3. Appium Inspector
@@ -52,7 +67,7 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
 - Confirm installation:
 
   ```bash
-  java -version
+  java --version
   ```
 
 ### 5. Android Studio (for Android)
@@ -64,13 +79,20 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
 - Command-line tool for Git version control, script execution, and running automation commands.
 
 ### 7. Install Platform Tools - Android Debug Bridge (ADB)
+- System Variables
+
+- Path
+  ```bash
+    C:\Users\platform-tools or <PLATFORM_TOOLS_DIRECTORY>
+  ```
+
 - Confirm installation:
 
   ```bash
-  adb -version
+  adb --version
   ```
 
-### 8. Set Environment Variable
+### 8. Set Environment Variables
 - System Variables
 
   ```bash
@@ -80,9 +102,12 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
    NODE_HOME            C:\Program Files\nodejs
   ```
 
+- Path
   ```bash
-   Path for ADB
-   C:\Users\platform-tools or <PLATFORM_TOOLS_DIRECTORY>
+    %ANDROID_HOME%\platform-toolsxx
+    %ANDROID_HOME%\emulator
+    %ANDROID_HOME%\tools
+    %ANDROID_HOME%\tools\bin
   ```
 
 ## Cloning and running this project:
