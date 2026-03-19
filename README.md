@@ -17,6 +17,9 @@ Here’s a short, clear description for each tool/framework used in Asenso Mobil
 ## Nextcloud Test Script
 - https://drive.apolloglobal.net/s/baJ4HwJ3FQB7WfE
 
+## Allure Test Report
+- https://rome-apollo.github.io/asenso-mobile-automation/
+
 ## Appium Prerequisites
 
 Before running the Asenso Mobile mobile test automation, ensure the following prerequisites are installed and configured:
@@ -55,6 +58,7 @@ Before running the Asenso Mobile mobile test automation, ensure the following pr
 ### 5. Android Studio (for Android)
 - Provides SDKs, platform tools, and device/emulator management.
 - Ensure ANDROID_HOME environment variable is set.
+- Download from: https://developer.android.com/tools
 
 ### 6. Git Bash
 - Command-line tool for Git version control, script execution, and running automation commands.
